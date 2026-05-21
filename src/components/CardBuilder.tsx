@@ -236,6 +236,13 @@ export function CardBuilder({ onComplete, initialData }: CardBuilderProps) {
           <label className="block text-xs uppercase font-bold tracking-widest text-neutral-400">
             Profile Photo
           </label>
+          <input
+            ref={fileInputRef}
+            type="file"
+            accept="image/*"
+            onChange={handlePhotoChange}
+            className="hidden"
+          />
           <div
             onDragEnter={handleDrag}
             onDragOver={handleDrag}
@@ -250,13 +257,6 @@ export function CardBuilder({ onComplete, initialData }: CardBuilderProps) {
                 : 'border-neutral-800 hover:border-neutral-700 hover:bg-neutral-900/40'
             }`}
           >
-            <input
-              ref={fileInputRef}
-              type="file"
-              accept="image/*"
-              onChange={handlePhotoChange}
-              className="hidden"
-            />
             {photoPreview ? (
               <div className="flex items-center gap-3 w-full justify-between">
                 <div className="flex items-center gap-3">
