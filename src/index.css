@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Instrument+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Instrument Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-heading: "Syne", sans-serif;
+  
+  --color-meecards-dark: #060608;
+  --color-meecards-saffron: #FF6B00;
+  --color-meecards-gold: #D4A017;
+  --color-meecards-teal: #00C9A7;
+}
+
+/* Custom styles for animations, marquee, and utility custom styling safely */
+@keyframes scrollTimeline {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: scrollTimeline 30s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
+/* Rounded corners, scroll physics, smooth interactions */
+html {
+  scroll-behavior: smooth;
+  scroll-margin-top: 64px;
+}
+
+/* Hide scrollbar for gallery and overlays in custom ways */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
