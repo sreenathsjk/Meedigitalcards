@@ -1,4 +1,4 @@
-/**
+ /**
  * @license
  * SPDX-License-Identifier: Apache-2.0
  */
@@ -369,7 +369,9 @@ export default function App() {
         <div className="hidden md:flex items-center gap-4">
           <span className="text-xs text-neutral-500 font-mono">Status: 100% Live</span>
           <a
-            href="#card-builder"
+            href="https://ais-pre-3muqfmk6dgwqs5hnpqljkj-196543076788.asia-southeast1.run.app"
+            target="_blank"
+            rel="noopener noreferrer"
             className="px-4 py-2 rounded-lg bg-white text-black hover:bg-meecards-saffron hover:shadow-lg hover:shadow-[#FF6B00]/10 transition duration-300 text-xs font-bold uppercase tracking-wider active:scale-95 cursor-pointer"
           >
             Build My Card
@@ -431,12 +433,16 @@ export default function App() {
                 FAQs
               </a>
               <hr className="border-neutral-900/80 my-2" />
-               <a 
-                 href="https://ais-pre-3muqfmk6dgwqs5hnpqljkj-196543076788.asia-southeast1.run.app" 
-                 className="..."
+              <a
+                href="https://ais-pre-3muqfmk6dgwqs5hnpqljkj-196543076788.asia-southeast1.run.app"
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => setIsHamOpen(false)}
+                className="px-4 py-2.5 bg-gradient-to-r from-[#FF6B00] to-amber-500 text-black text-xs font-bold uppercase tracking-wider rounded-xl transition duration-350 transform hover:scale-102 active:scale-95 flex items-center justify-center gap-1.5 cursor-pointer shadow-md"
               >
-                Build my card
-</a>
+                <Icons.Sparkles className="w-3.5 h-3.5 animate-pulse" />
+                <span>Build My Card</span>
+              </a>
             </motion.div>
           )}
         </AnimatePresence>
@@ -465,7 +471,9 @@ export default function App() {
 
             <div className="flex flex-col sm:flex-row gap-4">
               <a
-                href="#card-builder"
+                href="https://ais-pre-3muqfmk6dgwqs5hnpqljkj-196543076788.asia-southeast1.run.app"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="px-6 py-4 rounded-xl bg-gradient-to-r from-[#FF6B00] to-amber-500 text-black text-xs font-bold uppercase tracking-widest hover:shadow-xl hover:shadow-[#FF6B00]/15 flex items-center justify-center gap-2 transform hover:-translate-y-0.5 transition duration-300 cursor-pointer"
               >
                 <span>Draft Free MeeCard</span>
@@ -792,7 +800,7 @@ export default function App() {
               {/* FAVOURITES HORIZONTAL SHELF (localStorage backed) */}
               {favourites.length > 0 && (
                 <div className="space-y-4 bg-gradient-to-r from-meecards-gold/5 via-transparent to-transparent p-5 rounded-3xl border border-meecards-gold/15">
-                  <h3 className="text-xs uppercase font-extrabold tracking-widest text-meecards-gold font-mono flex items-center gap-1.5 leading-none">
+                  <h3 className="text-xs uppercase font-extrabold tracking-widest text-[#D4A017] font-mono flex items-center gap-1.5 leading-none">
                     <Icons.Heart className="w-4 h-4 fill-meecards-gold" />
                     My Saved Favourites Shelf ({favourites.length})
                   </h3>
@@ -879,7 +887,7 @@ export default function App() {
 
                         {/* Top banner labels (Trending, Lock index) */}
                         {isPremium && (
-                          <div className="absolute top-2 left-2 px-2 py-0.5 rounded bg-black/60 backdrop-blur-md border border-meecards-gold/30 text-meecards-gold text-[9px] font-bold uppercase tracking-widest font-mono flex items-center gap-1">
+                          <div className="absolute top-2 left-2 px-2 py-0.5 rounded bg-black/60 backdrop-blur-md border border-meecards-gold/30 text-[#D4A017] text-[9px] font-bold uppercase tracking-widest font-mono flex items-center gap-1">
                             <Icons.Lock className="w-2.5 h-2.5" />
                             <span>Gold Access</span>
                           </div>
@@ -1036,7 +1044,7 @@ export default function App() {
             </div>
 
             <div className="bg-[#0a0a0d] border border-neutral-900/60 rounded-3xl p-6 hover:border-neutral-850 duration-300 transition">
-              <div className="w-10 h-10 rounded-xl bg-neutral-900 border border-neutral-800 flex items-center justify-center mb-4">
+              <div className="w-10 h-10 rounded-xl bg-neutral-900 border border-neutral-850 flex items-center justify-center mb-4">
                 <Icons.Globe className="w-5 h-5 text-neutral-300" />
               </div>
               <h3 className="font-bold text-base text-white font-heading">No App Required</h3>
