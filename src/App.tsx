@@ -431,13 +431,12 @@ export default function App() {
                 FAQs
               </a>
               <hr className="border-neutral-900/80 my-2" />
-              <a
-                href="#card-builder"
-                onClick={() => setIsHamOpen(false)}
-                className="w-full py-3 rounded-xl bg-gradient-to-r from-meecards-saffron to-amber-500 text-xs font-bold uppercase tracking-widest text-[#060608] cursor-pointer"
-              >
-                Build Card Now
-              </a>
+               <a 
+  href="https://ais-pre-3muqfmk6dgwqs5hnpqljkj-196543076788.asia-southeast1.run.app" 
+  className="..."
+>
+  Build my card
+</a>
             </motion.div>
           )}
         </AnimatePresence>
