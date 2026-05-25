@@ -369,9 +369,7 @@ export default function App() {
         <div className="hidden md:flex items-center gap-4">
           <span className="text-xs text-neutral-500 font-mono">Status: 100% Live</span>
           <a
-            href="https://ais-pre-3muqfmk6dgwqs5hnpqljkj-196543076788.asia-southeast1.run.app"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="#card-builder"
             className="px-4 py-2 rounded-lg bg-white text-black hover:bg-meecards-saffron hover:shadow-lg hover:shadow-[#FF6B00]/10 transition duration-300 text-xs font-bold uppercase tracking-wider active:scale-95 cursor-pointer"
           >
             Build My Card
@@ -434,9 +432,7 @@ export default function App() {
               </a>
               <hr className="border-neutral-900/80 my-2" />
               <a
-                href="https://ais-pre-3muqfmk6dgwqs5hnpqljkj-196543076788.asia-southeast1.run.app"
-                target="_blank"
-                rel="noopener noreferrer"
+                href="#card-builder"
                 onClick={() => setIsHamOpen(false)}
                 className="px-4 py-2.5 bg-gradient-to-r from-[#FF6B00] to-amber-500 text-black text-xs font-bold uppercase tracking-wider rounded-xl transition duration-350 transform hover:scale-102 active:scale-95 flex items-center justify-center gap-1.5 cursor-pointer shadow-md"
               >
@@ -471,9 +467,7 @@ export default function App() {
 
             <div className="flex flex-col sm:flex-row gap-4">
               <a
-                href="https://ais-pre-3muqfmk6dgwqs5hnpqljkj-196543076788.asia-southeast1.run.app"
-                target="_blank"
-                rel="noopener noreferrer"
+                href="#card-builder"
                 className="px-6 py-4 rounded-xl bg-gradient-to-r from-[#FF6B00] to-amber-500 text-black text-xs font-bold uppercase tracking-widest hover:shadow-xl hover:shadow-[#FF6B00]/15 flex items-center justify-center gap-2 transform hover:-translate-y-0.5 transition duration-300 cursor-pointer"
               >
                 <span>Draft Free MeeCard</span>
@@ -1044,7 +1038,7 @@ export default function App() {
             </div>
 
             <div className="bg-[#0a0a0d] border border-neutral-900/60 rounded-3xl p-6 hover:border-neutral-850 duration-300 transition">
-              <div className="w-10 h-10 rounded-xl bg-neutral-900 border border-neutral-850 flex items-center justify-center mb-4">
+              <div className="w-10 h-10 rounded-xl bg-neutral-900 border border-neutral-800 flex items-center justify-center mb-4">
                 <Icons.Globe className="w-5 h-5 text-neutral-300" />
               </div>
               <h3 className="font-bold text-base text-white font-heading">No App Required</h3>
